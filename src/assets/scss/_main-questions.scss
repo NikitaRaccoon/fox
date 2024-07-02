@@ -1,0 +1,118 @@
+.main-questions {
+
+    position: relative;
+    top: -20rem;
+
+    padding: 10rem 15.5rem 14.5rem 15.5rem;
+    border-radius: 5rem;
+    background: url(../images/main-questuions-background.jpg) center / cover no-repeat;
+
+    * {
+        color: $white;
+    }
+
+    &__title {
+        font-size: 4.6rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+        max-width: 64rem;
+    }
+
+    &__subtitle {
+
+        p {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+
+        margin-bottom: 6rem;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        li {
+            font-size: 2rem;
+            line-height: 2.6rem;
+            padding-left: 4.6rem;
+            position: relative;
+
+            &::before {
+
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3rem;
+                height: 3rem;
+                background: url(../images/main-info-list-flag.svg) center / cover no-repeat;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 991px) {
+
+    .container.questions {
+        position: relative;
+        padding: 0;
+        margin: 0 15px;
+    }
+
+    .main-questions {
+
+        top: -20rem;
+        padding: 10rem 5rem;
+        border-radius: 2rem;
+        background: url(../images/main-questuions-background-mobile.jpg) center / cover no-repeat;
+
+    }
+}
+
+@media (max-width: 620px) {
+    .main-questions {
+        top: -8rem;
+        padding: 4rem 2.5rem;
+
+        &__title {
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        &__subtitle {
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+
+            margin-bottom: 2.3rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            li {
+                font-size: 14px;
+                line-height: 20px;
+                padding-left: 2.8rem;
+
+                &::before {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                }
+            }
+
+        }
+    }
+}

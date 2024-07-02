@@ -1,0 +1,835 @@
+.intro {
+
+    padding-bottom: 15rem;
+
+    &__wrapper {
+        padding: 10rem 15.5rem 11.3rem 15.5rem;
+        border-radius: 5rem;
+        background: url(../images/intro-background.jpg) center / cover no-repeat;
+        margin-bottom: 6rem;
+
+        * {
+            color: $white;
+        }
+
+        &>img {
+            display: none;
+        }
+    }
+
+    &.about {
+
+        padding-top: 8rem;
+        padding-bottom: 0;
+
+        .intro__stat-title {
+            font-size: 4.6rem;
+            line-height: 6rem;
+
+
+            max-width: 133rem;
+            padding: 0 1.5rem;
+            margin: 0 auto 5.4rem;
+
+        }
+
+        .intro__title {
+            margin-bottom: 2rem;
+        }
+
+        .intro__subtitle {
+            font-size: 2.4rem;
+            line-height: 3.4rem;
+            margin-bottom: 7.7rem;
+            max-width: 111.7rem;
+        }
+
+        .intro__stat {
+            margin-bottom: 10rem;
+        }
+
+        .intro__stat-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            position: relative;
+
+            span {
+                font-weight: 400;
+            }
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 12rem;
+                height: 12rem;
+                border-radius: 50%;
+                background-color: #fff;
+                position: absolute;
+                z-index: -1;
+                top: -2rem;
+                left: 4.5rem;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 4.6rem;
+        line-height: 6rem;
+        margin-bottom: 8.6rem;
+    }
+
+    &__reasons {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-left: 52rem;
+    }
+
+    &__reasons-title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 3rem;
+    }
+
+    &__reasons-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3.7rem;
+        column-gap: 3.1rem;
+    }
+
+    &__reasons-item {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2.7rem;
+        position: relative;
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 3rem;
+            color: $orange;
+        }
+
+        div {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: url(../images/protection-list-icon.svg) center/cover no-repeat;
+            position: absolute;
+            top: .5rem;
+            left: 0;
+        }
+    }
+
+    &__stat {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 0 15.5rem;
+    }
+
+    &__stat-item {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        span {
+            font-size: 6.4rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+    }
+}
+
+.intro-business {
+
+    padding-bottom: 11rem;
+
+    &__top {
+        max-width: 160rem;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        background: url(../images/Subtract-2.svg) 50%/cover no-repeat;
+        padding: 10rem 15.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        position: relative;
+        z-index: 2;
+
+        &::before {
+            content: "";
+            width: 6rem;
+            height: 6.2rem;
+            display: inline-block;
+            background: url(../images/Subtract-circle-2.png) 50%/cover no-repeat;
+            position: absolute;
+            bottom: -5.8rem;
+            left: calc(50% - 3rem);
+        }
+
+        img {
+            position: absolute;
+            left: 126rem;
+            bottom: -10rem;
+            width: 100rem;
+        }
+    }
+
+    &__top-wrapper {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__top-col {
+        font-size: 4.6rem;
+        line-height: 6rem;
+    }
+
+    &__top-text {
+        flex: 0 0 64rem;
+
+        p {
+            font-size: 2.4rem;
+            line-height: 4rem;
+        }
+    }
+
+    &__wrapper {
+        background: url(../images/intro-background-business-2.jpg) bottom center / cover no-repeat;
+        border-radius: 5rem;
+        padding-top: 30rem;
+        position: relative;
+        top: -15rem;
+        margin-bottom: -15rem;
+    }
+
+    &__title {
+        font-size: 4rem;
+        line-height: 5rem;
+        max-width: 94.5rem;
+        margin: 0 auto 5rem auto;
+        color: #f9f9f9;
+        text-align: center;
+
+        b {
+            color: #f9f9f9;
+        }
+    }
+
+    &__list {
+        .swiper-wrapper {
+            gap: 10rem;
+            justify-content: center;
+        }
+
+        margin-bottom: 10rem;
+    }
+
+    &__list-item {
+        flex-shrink: 1;
+        max-width: 48.3rem;
+        display: flex;
+        gap: 2rem;
+
+        img {
+            width: 5rem;
+            flex: 0 0 5rem;
+            height: 5rem;
+        }
+
+        p {
+            font-size: 2rem;
+            line-height: 3rem;
+            color: #f9f9f9;
+        }
+    }
+
+    &__pagination {}
+
+    &__title-inner {
+        color: #F9F9F9;
+        font-size: 4.6rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+        color: #F9F9F9;
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+        max-width: 111.7rem;
+    }
+
+    &__reasons-wrapper {
+        display: flex;
+
+        img {
+            flex: 62rem;
+            width: 62rem;
+        }
+
+        .intro__reasons {
+            padding-left: 0;
+
+            .intro__reasons-item {
+                div {
+                    color: #f9f9f9;
+                }
+            }
+
+            .intro__reasons-title {
+                color: #f9f9f9;
+                margin-top: 4.6rem;
+            }
+        }
+    }
+
+    .intro__stat {
+        max-width: 133rem;
+        padding: 0 1.5rem;
+        margin: 6rem auto 0 auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .intro {
+
+        padding-bottom: 8rem;
+
+        &__wrapper {
+            padding: 3rem 4rem;
+            border-radius: 2rem;
+            background: url(../images/intro-background-tablet.jpg) bottom / cover no-repeat;
+            margin-bottom: 1.5rem;
+
+            * {
+                color: $white;
+            }
+        }
+
+        &.about {
+
+            padding-top: 8rem;
+            padding-bottom: 0;
+
+            .intro__title {
+                margin-bottom: 2rem;
+            }
+
+            .intro__subtitle {
+                font-size: 2.4rem;
+                line-height: 3.4rem;
+                margin-bottom: 7.7rem;
+                max-width: 111.7rem;
+            }
+
+            .intro__stat {
+                margin-bottom: 5rem;
+                gap: 6rem;
+                // margin: 0 0 5rem 0;
+                justify-content: center;
+            }
+
+            .intro__stat-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                position: relative;
+                max-width: max-content;
+
+                span {
+                    font-weight: 400;
+                }
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 12rem;
+                    height: 12rem;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    position: absolute;
+                    z-index: -1;
+                    top: -2rem;
+                    left: 4.5rem;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 3rem;
+            line-height: 3.6rem;
+            margin-bottom: 3.6rem;
+        }
+
+        &__reasons {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            padding-left: 0;
+        }
+
+        &__reasons-title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 3rem;
+        }
+
+        &__stat {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 0 10rem;
+        }
+
+        &__stat-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+
+            span {
+                font-size: 6.4rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            p {
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .intro-business {
+
+        padding-bottom: 11rem;
+
+        &__top {
+            margin: 0 1.5rem;
+            border-radius: 2rem;
+            width: auto;
+            padding: 8rem 10rem;
+
+            &::before {
+                content: "";
+                width: 6rem;
+                height: 6.2rem;
+                display: inline-block;
+                background: url(../images/Subtract-circle-2.png) 50%/cover no-repeat;
+                position: absolute;
+                bottom: -5.8rem;
+                left: calc(50% - 3rem);
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        &__top-wrapper {
+            display: flex;
+            gap: 3rem;
+            flex-direction: column;
+        }
+
+        &__top-col {
+            font-size: 4.6rem;
+            line-height: 6rem;
+            text-align: center;
+        }
+
+        &__top-text {
+            flex: 0 0 auto;
+
+            p {
+                font-size: 2.4rem;
+                line-height: 4rem;
+                text-align: center;
+            }
+        }
+
+        &__wrapper {
+            background: url(../images/intro-background-business-2.jpg) bottom center / cover no-repeat;
+            border-radius: 5rem;
+            padding-top: 30rem;
+            position: relative;
+            top: -15rem;
+            margin-bottom: -15rem;
+        }
+
+        &__title {
+            font-size: 4rem;
+            line-height: 5rem;
+            max-width: 94.5rem;
+            margin: 0 auto 5rem auto;
+            color: #f9f9f9;
+            text-align: center;
+
+            b {
+                color: #f9f9f9;
+            }
+        }
+
+        &__list {
+            .swiper-wrapper {
+                gap: 0;
+                justify-content: normal;
+            }
+
+            margin-bottom: 10rem;
+        }
+
+        &__list-item {
+            flex-shrink: 0;
+            max-width: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            img {
+                width: 5rem;
+                flex: 0 0 5rem;
+                height: 5rem;
+            }
+
+            p {
+                font-size: 2rem;
+                line-height: 3rem;
+                color: #f9f9f9;
+                max-width: 43rem;
+                text-align: center;
+            }
+        }
+
+        &__pagination {
+            margin-top: 1.2rem;
+            display: flex;
+            justify-content: center;
+
+            span.swiper-pagination-bullet {
+                background-color: transparent;
+                border: 1px solid #f60;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: #f60;
+                }
+            }
+        }
+
+        &__title-inner {
+            color: #F9F9F9;
+            font-size: 4.6rem;
+            line-height: 6rem;
+            margin-bottom: 2rem;
+        }
+
+        &__subtitle {
+            color: #F9F9F9;
+            font-size: 2.4rem;
+            line-height: 3.4rem;
+            max-width: 111.7rem;
+        }
+
+        &__reasons-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            img {
+                margin-top: 2rem;
+                flex: auto;
+                width: 100%;
+                max-width: 50rem;
+            }
+
+            .intro__reasons {
+                padding-left: 0;
+
+                .intro__reasons-item {
+                    div {
+                        color: #f9f9f9;
+                    }
+                }
+
+                .intro__reasons-title {
+                    color: #f9f9f9;
+                    margin-top: 4.6rem;
+                }
+            }
+        }
+
+        .intro__stat {
+            max-width: 133rem;
+            padding: 0 1.5rem;
+            margin: 6rem auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .intro {
+
+        padding-bottom: 4rem;
+
+        &__wrapper {
+            padding: 27px 12px 0px 12px;
+            background: url(../images/intro-background-tablet.jpg) bottom / cover no-repeat;
+
+            img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &.about {
+
+            padding-top: 3rem;
+
+            .intro__stat-title {
+                font-size: 2.4rem;
+                line-height: 3.4rem;
+
+                padding: 0;
+                margin: 0 auto 5rem;
+
+            }
+
+            .intro__title {
+                margin-bottom: 1.5rem;
+                font-size: 2.4rem;
+                line-height: 3.4rem;
+            }
+
+            .intro__subtitle {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                margin-bottom: 4.6rem;
+            }
+
+            .intro__stat {
+                margin-bottom: 5rem;
+                gap: 7rem;
+            }
+
+            .intro__stat-item {
+                &::before {
+                    left: 2rem;
+                }
+            }
+
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__reasons {
+            gap: .5rem;
+        }
+
+        &__reasons-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 3rem;
+        }
+
+        &__reasons-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 1.8rem;
+            column-gap: 0;
+        }
+
+        &__reasons-item {
+            display: flex;
+            flex-direction: column;
+            padding-left: 2.2rem;
+            position: relative;
+
+            p {
+                font-size: 14px;
+                line-height: 30px;
+            }
+
+            div {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &::before {
+                top: .3rem;
+            }
+        }
+
+        &__stat {
+            margin: 0;
+        }
+
+        &__stat-item {
+
+            align-items: flex-start;
+
+            span {
+                font-size: 4.8rem;
+                line-height: 1;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 2rem;
+                text-align: left;
+            }
+        }
+    }
+
+    .intro-business {
+
+        padding-bottom: 11rem;
+
+        &__top {
+            margin: 0 1.5rem;
+            padding: 2.7rem 2rem 5rem 2rem;
+            width: auto;
+            border-radius: 2rem;
+
+            &::before {
+                width: 4.5rem;
+                height: 4.7rem;
+                bottom: -4.5rem;
+                left: calc(50% - 2.2rem);
+            }
+        }
+
+        &__top-wrapper {
+            display: flex;
+            gap: 1.6rem;
+            flex-direction: column;
+        }
+
+        &__top-col {
+            text-align: center;
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        &__top-text {
+            flex: 0 0 auto;
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &__wrapper {
+            background: url(../images/intro-background-business-2.jpg) bottom center / cover no-repeat;
+            border-radius: 2rem;
+            padding-top: 19.4rem;
+            top: -12rem;
+            margin-bottom: -12rem;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+            margin: 0 auto 3rem auto;
+        }
+
+        &__list {
+            margin-bottom: 6rem;
+        }
+
+        &__list-item {
+            gap: 1rem;
+
+            img {
+                width: 4rem;
+                flex: auto;
+                height: 4rem;
+            }
+        }
+
+        &__pagination {
+            margin-top: 1.2rem;
+            display: flex;
+            justify-content: center;
+
+            span.swiper-pagination-bullet {
+                background-color: transparent;
+                border: 1px solid #f60;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: #f60;
+                }
+            }
+        }
+
+        &__title-inner {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 4.6rem;
+        }
+
+        &__reasons-wrapper {
+
+            img {
+                margin-top: 2rem;
+                flex: auto;
+                width: 100%;
+                max-width: 50rem;
+            }
+
+            .intro__reasons {
+                padding-left: 0;
+
+                .intro__reasons-item {
+                    div {
+                        color: #f9f9f9;
+                    }
+                }
+
+                .intro__reasons-title {
+                    color: #f9f9f9;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .intro__stat {
+            max-width: 133rem;
+            padding: 0 1.5rem;
+            margin: 6rem auto 0 auto;
+        }
+    }
+}

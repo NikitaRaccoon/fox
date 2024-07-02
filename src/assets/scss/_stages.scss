@@ -1,0 +1,436 @@
+.stages {
+
+    padding-bottom: 10rem;
+
+    &__title {
+        font-size: 4.6rem;
+        line-height: 6rem;
+        text-align: center;
+        max-width: 104.8rem;
+        margin: 0 auto 3rem;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+
+        a {
+            padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+            background-color: #fff;
+            border-radius: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            transition: .3s;
+
+            span {
+                border-radius: 50%;
+                background: #f9f9f9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 3rem;
+                width: 3rem;
+
+                svg {
+                    width: 1rem;
+                    height: 1rem;
+                    transition: .3s;
+
+                    path {
+                        fill: rgba(40, 40, 40, 0.40);
+                    }
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+                line-height: 3.4rem;
+
+                &::before {
+                    content: attr(data-text);
+                    display: block;
+                    font-weight: 700;
+                    height: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                    transition: 0s;
+                }
+            }
+
+            &.active,
+            &:hover {
+
+                background-color: #f60;
+
+                p {
+                    color: transparent;
+
+                    &::before {
+                        font-size: 1.6rem;
+                        line-height: 3.4rem;
+                        font-weight: 700;
+                        visibility: visible;
+                        overflow: visible;
+                        color: #fff;
+                    }
+                }
+
+                span {
+
+                    svg {
+                        transform: rotate(45deg);
+
+                        path {
+                            fill: #f60;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__item {
+        padding: 5.7rem 8rem 7.3rem;
+        border-radius: 2rem;
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        display: none;
+
+        &.stages__item-1 {
+            background: url(../images/stages-1.jpg) center / cover no-repeat;
+
+            * {
+                color: #f9f9f9;
+            }
+
+            .stages__item-list {
+                grid-template-columns: auto;
+            }
+        }
+
+        &.stages__item-2 {
+            background: url(../images/stages-2.jpg) center / cover no-repeat;
+
+            * {
+                color: #f9f9f9;
+                border-color: #f9f9f9;
+            }
+
+            .stages__item-list {
+                grid-template-columns: auto auto auto;
+            }
+        }
+
+        &.stages__item-3 {
+            background: url(../images/stages-3.jpg) center / cover no-repeat;
+
+            .stages__item-list {
+                grid-template-columns: auto auto;
+            }
+        }
+
+        &.stages__item-4 {
+            background: url(../images/stages-4.jpg) center / cover no-repeat;
+            justify-content: flex-start;
+
+            .stages__item-list {
+                grid-template-columns: auto auto;
+            }
+        }
+
+        &.active {
+            display: flex;
+            animation: stagesFadeUp .3s forwards;
+        }
+
+    }
+
+    @keyframes stagesFadeUp {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+
+    &__item-title {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+    }
+
+    &__item-subtitle {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        max-width: 60.9rem;
+        margin-top: 3rem;
+    }
+
+    &__item-list {
+
+        display: grid;
+        row-gap: 2.8rem;
+        column-gap: 2.1rem;
+        margin-top: 3rem;
+        max-width: fit-content;
+
+        li {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        span {
+            font-size: 1.2rem;
+            line-height: 0.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            border: .1rem solid #282828;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+    }
+
+
+    &__wrapper-mobile {
+        display: none;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .stages {
+
+        padding-bottom: 5rem;
+
+        &__title {
+            font-size: 24px;
+            line-height: 34px;
+            text-align: center;
+            max-width: 104.8rem;
+            margin: 0 auto 3rem;
+        }
+
+        &__wrapper {
+            display: none;
+        }
+
+        &__buttons {
+            display: none;
+        }
+
+        &__tab-wrapper {
+            display: none;
+        }
+
+        &__item {
+            display: flex;
+            margin: 1rem 0;
+            padding: 3rem 1.5rem;
+            justify-content: flex-start;
+            height: auto;
+            border-radius: 1rem;
+
+            &.stages__item-1 {
+                background: url(../images/stages-1-mobile.jpg) center / cover no-repeat;
+
+                .stages__item-list {
+                    grid-template-columns: auto;
+                }
+            }
+
+            &.stages__item-2 {
+                background: url(../images/stages-2-mobile.jpg) center / cover no-repeat;
+
+                .stages__item-list {
+                    grid-template-columns: auto;
+                }
+            }
+
+            &.stages__item-3 {
+                background: url(../images/stages-3-mobile.jpg) center / cover no-repeat;
+
+                .stages__item-list {
+                    grid-template-columns: auto;
+                }
+            }
+
+            &.stages__item-4 {
+                background: url(../images/stages-4-mobile.jpg) center / cover no-repeat;
+
+                .stages__item-list {
+                    grid-template-columns: auto;
+                }
+            }
+        }
+
+        &__item-title {
+            font-size: 20px;
+            line-height: 26px;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__item-subtitle {
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 1.9rem;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__item-list {
+            display: grid;
+            row-gap: 1.7rem;
+            margin-top: 2.2rem;
+            max-width: fit-content;
+            gap: 1.4rem;
+
+            span {
+                flex: 0 0 4rem;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        &__wrapper-mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        &__item-wrapper {
+
+            a {
+                padding: 1rem 1.2rem 1rem 2rem;
+                background-color: #fff;
+                border-radius: 1rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                transition: .3s;
+
+                span {
+                    border-radius: 50%;
+                    background: #f9f9f9;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 3rem;
+                    width: 3rem;
+                    flex: 0 0 3rem;
+
+                    svg {
+                        width: 1rem;
+                        height: 1rem;
+                        transition: .3s;
+
+                        path {
+                            fill: rgba(40, 40, 40, 0.40);
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    &::before {
+                        content: attr(data-text);
+                        display: block;
+                        font-weight: 700;
+                        height: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                        transition: 0s;
+                    }
+                }
+
+                &.active {
+
+                    background-color: #f60;
+
+                    p {
+                        color: transparent;
+
+                        &::before {
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-weight: 700;
+                            visibility: visible;
+                            overflow: visible;
+                            color: #fff;
+                        }
+                    }
+
+                    span {
+
+                        svg {
+                            transform: rotate(45deg);
+
+                            path {
+                                fill: #f60;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 620px) {
+    .stages {
+        &__item {
+            &.stages__item-1 {
+                min-height: 53rem;
+            }
+
+            &.stages__item-2 {
+                min-height: 62rem;
+            }
+
+            &.stages__item-3 {
+                min-height: 56rem;
+            }
+
+            &.stages__item-4 {
+                min-height: 68rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa"), url("../fonts/Evolventa-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa Oblique"), url("../fonts/Evolventa-Oblique.woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa Bold"), url("../fonts/Evolventa-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa Bold Oblique"), url("../fonts/Evolventa-BoldOblique.woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: local('Futura PT Bold'), local('Futura-PT-Bold'),
+        url('../fonts/') format('woff2'),
+        url('../fonts/FuturaPT-Bold.woff') format('woff'),
+        url('../fonts/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icon-font';
+    src: url('../fonts/icon-font.eot?pi7drr');
+    src: url('../fonts/icon-font.eot?pi7drr#iefix') format('embedded-opentype'),
+        url('../fonts/icon-font.ttf?pi7drr') format('truetype'),
+        url('../fonts/icon-font.woff?pi7drr') format('woff'),
+        url('../fonts/icon-font.svg?pi7drr#icon-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.ic {
+    font-family: 'icon-font' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-nav-arrow-icon:before {
+    content: "\e901";
+}
+
+.icon-btn-arrow-icon:before {
+    content: "\e900";
+    color: #f9f9f9;
+}

@@ -1,0 +1,162 @@
+$orange: #FF6600;
+$orange2: #E15A00;
+$black: #282828;
+$white: #F9F9F9;
+$blue: #1A1D2C;
+
+body {
+    * {
+        font-family: Evolventa;
+        color: $black;
+    }
+
+    a {
+        transition: .3s;
+    }
+
+    .fancybox-container * {
+        color: #fff;
+    }
+}
+
+html {
+    font-size: .4330955vw;
+    scroll-behavior: smooth;
+
+    @media (max-width: 991px) {
+        font-size: 10px;
+    }
+}
+
+.container {
+    max-width: 163rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    &.sm {
+        max-width: 133rem;
+    }
+}
+
+h1.page-title {
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 6rem;
+    margin-bottom: 3rem;
+    max-width: 133rem;
+    margin: 0 auto 3rem auto;
+    padding: 0 1.5rem;
+
+    @media (max-width:620px) {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 2rem;
+    }
+}
+
+.section-wrapper {
+    overflow: hidden;
+}
+
+.btn {
+    display: flex;
+    font-weight: 700;
+    justify-content: flex-end;
+    background-color: $orange;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+
+    gap: 3.2rem;
+    padding: 3rem 3.6rem 3rem 1rem;
+    border-radius: 4.6rem;
+    transition: .3s;
+
+    &:hover {
+        background-color: $orange2;
+    }
+}
+
+input[type=radio],
+input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    top: 0;
+    left: -10000px;
+}
+
+.my_icon {
+    position: absolute;
+    bottom: 100%;
+    left: -15%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+
+    img {
+        width: 50px;
+    }
+
+    p {
+        margin-top: 15px;
+        bottom: 100%;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1;
+        background-color: #fff;
+        height: auto;
+        padding: 6px;
+        border-radius: 5px;
+        width: 200px;
+        white-space: nowrap;
+        box-shadow: 0px 0px 5px 0px #0000002e;
+    }
+
+
+}
+
+.my_icon-wrapper {
+    position: relative;
+    width: 100px;
+}
+
+.slider-button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: #F60;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+        width: 1.6rem;
+    }
+
+    &.swiper-button-disabled {
+        background: #FFB380;
+    }
+
+    &:hover {
+        background: #282828;
+    }
+}
+
+@media (max-width: 620px) {
+    .slider-button {
+        width: 25px;
+        height: 25px;
+
+        img {
+            width: 9px;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+.help {
+
+    margin-bottom: 12rem;
+
+    .container {
+        max-width: 129rem;
+    }
+
+
+    &__title {
+        font-size: 4.6rem;
+        line-height: 6rem;
+        max-width: 121.4rem;
+        margin-bottom: 5rem;
+
+        img {
+            display: inline;
+            width: 4.8rem;
+            height: 4.8rem;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 11rem;
+        align-items: center;
+
+    }
+
+    &__cards {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 4.5rem;
+        padding: 4.5rem;
+        border-radius: 3rem;
+        background-color: #fff;
+        width: 100%;
+        max-width: 41rem;
+
+        img {
+            width: 6.2rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        max-width: 33rem;
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+}
+
+@media (max-width:991px) {
+
+    .help {
+
+        margin-bottom: 6rem;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+
+        }
+
+        &__card {
+            max-width: 100%;
+        }
+
+        &__text {
+            gap: 1rem;
+            max-width: 100%;
+
+            p {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 620px) {
+    .help {
+        &__title {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 23px;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &__wrapper {
+            gap: 30px;
+        }
+
+        &__cards {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &__card {
+
+            border-radius: 10px;
+            gap: 25px;
+            padding: 30px;
+
+            img {
+                width: 50px;
+            }
+
+            p {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        }
+
+        &__text {
+            p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}

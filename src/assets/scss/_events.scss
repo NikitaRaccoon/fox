@@ -1,0 +1,224 @@
+.events {
+
+    padding-bottom: 12rem;
+
+    &__title {
+        font-size: 4.6rem;
+        line-height: 6rem;
+        max-width: 84.5rem;
+        text-align: center;
+        margin: 0 auto 5rem auto;
+    }
+
+    &__slider {
+        margin-left: 51rem;
+        margin-bottom: 3.7rem;
+    }
+
+    &__slide {
+
+        max-width: 85rem;
+
+        a {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+
+            &:hover {
+                .events__col-title {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    &__img {
+        flex: 0 0 41rem;
+
+        img {
+            border-radius: 2rem;
+            width: 100%;
+        }
+
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+
+    &__col-title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 3.4rem;
+        transition: .3s;
+    }
+
+    &__col-text {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: rgba(40, 40, 40, 0.50);
+    }
+
+    &__col-date {
+        color: $orange;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 3rem;
+    }
+
+    &__slider-nav {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        width: 100%;
+        max-width: 129rem;
+        margin: 0 auto;
+
+        a {
+            color: $orange;
+            font-size: 1.6rem;
+            line-height: 3rem;
+            text-decoration-line: underline;
+        }
+
+        span {
+            height: .1rem;
+            flex: 1 0 auto;
+            background-color: #e5e5e5;
+            display: inline-block;
+        }
+    }
+
+    &__slider-nav-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__prev,
+    &__next {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .events {
+
+        padding-bottom: 4rem;
+
+        &__slider {
+            margin-left: 1.5rem;
+            margin-bottom: 3.7rem;
+        }
+
+        &__slide {
+
+            max-width: 40rem;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                align-items: center;
+
+            }
+        }
+
+        &__img {
+            flex: 0 0 auto;
+
+            img {
+                border-radius: 2rem;
+                width: 100%;
+            }
+
+        }
+
+        &__slider-nav {
+            gap: 0;
+            max-width: 100%;
+            padding: 0 1.5rem;
+            justify-content: center;
+
+            a {
+                color: $orange;
+                font-size: 1.6rem;
+                line-height: 3rem;
+                text-decoration-line: underline;
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        &__slider-nav-buttons {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .events {
+
+        padding-bottom: 4rem;
+
+        &__title {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px;
+            max-width: 100%;
+            margin: 0 auto 2rem auto;
+        }
+
+        &__slider {
+            margin-bottom: 2rem;
+        }
+
+        &__slide {
+            gap: 1rem;
+            align-items: normal;
+            max-width: 240px;
+        }
+
+        &__img {
+            img {
+                border-radius: 1rem;
+            }
+
+        }
+
+        &__col {
+            gap: .5rem;
+        }
+
+        &__col-title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__col-text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__col-date {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__slider-nav {
+
+            a {
+                color: $orange;
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,585 @@
+.business-questions {
+    position: relative;
+    padding-top: 10rem;
+
+    &>img {
+        position: absolute;
+        width: calc(100% - 52rem);
+        left: 26rem;
+        top: 15rem;
+    }
+
+    &__title {
+        font-size: 4.6rem;
+        line-height: 6rem;
+        max-width: 104.4rem;
+        text-align: center;
+
+        margin: 0 auto 4rem auto;
+
+        img {
+            display: inline;
+            width: 4.8rem;
+        }
+    }
+
+    &__list {
+
+        max-width: 133rem;
+        padding: 0 1.5rem;
+        margin: 0 auto 10rem;
+
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+    }
+
+    &__list-item {
+        padding: 3rem;
+        border-radius: 2rem;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 36.7rem;
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+            margin-bottom: 2rem;
+
+            li {
+                position: relative;
+                font-size: 1.6rem;
+                line-height: 2.3rem;
+                padding-left: 2.6rem;
+
+                &::before {
+                    content: "";
+                    background: url(../images/protection-list-icon.svg) center / contain no-repeat;
+
+                    display: inline-block;
+                    width: 1.5rem;
+                    height: 1.5rem;
+
+                    position: absolute;
+                    top: .4rem;
+                    left: 0;
+                }
+            }
+
+        }
+    }
+
+    &__item-title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__item-button {
+
+        flex: 1 1 auto;
+        display: flex;
+        align-items: flex-end;
+
+        a.btn {
+            font-size: 1.3rem;
+            line-height: 2.2rem;
+            padding: 1.4rem 3rem;
+        }
+    }
+
+    &__turns-wrapper {
+        max-width: 133rem;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+    }
+
+    &__turns-title {
+        font-size: 4.6rem;
+        line-height: 6rem;
+        margin-bottom: 2.6rem;
+    }
+
+    &__turns {
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+    }
+
+    &__turns-nav {
+        display: none;
+    }
+
+    &__list-nav {
+        display: none;
+    }
+
+    &__turns-item {
+        padding: 4rem 3rem 3rem 3rem;
+        background-color: #fff;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            padding-top: 3rem;
+            padding: 3rem 3.5rem 3.5rem 3.5rem;
+            background-color: #F60;
+
+            div {
+                color: #f9f9f9;
+                margin-bottom: 3.5rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            p {
+                font-size: 1.5rem;
+                line-height: 2.4rem;
+            }
+        }
+
+        &>img {
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        span {
+
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+            padding-left: 2.4rem;
+
+            b {
+                line-height: 3rem;
+                color: #F60;
+                font-size: 2rem;
+                font-weight: 700;
+                position: relative;
+                z-index: 2;
+            }
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 5rem;
+                height: 5rem;
+                background-color: #f9f9f9;
+                border-radius: 1rem;
+
+                position: absolute;
+                top: -1.25rem;
+                left: 0rem;
+                z-index: 0;
+
+            }
+        }
+
+        &>div {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+
+        a.btn {
+            margin-top: 3rem;
+            font-size: 1.2rem;
+            line-height: 2.6rem;
+            padding: 1.2rem 1.4rem;
+            max-width: 100%;
+            justify-content: center;
+        }
+
+    }
+}
+
+@media (max-width: 991px) {
+    .business-questions {
+        position: relative;
+        padding-top: 10rem;
+
+        &>img {
+            position: absolute;
+            width: calc(100% - 52rem);
+            left: 26rem;
+            top: 15rem;
+        }
+
+        &__title {
+            font-size: 4.6rem;
+            line-height: 6rem;
+            max-width: 104.4rem;
+            text-align: center;
+
+            margin: 0 auto 4rem auto;
+
+            img {
+                display: inline;
+                width: 4.8rem;
+            }
+        }
+
+        &__list {
+            .swiper-wrapper {
+                display: flex;
+                gap: 0;
+            }
+        }
+
+        &__turns-nav,
+        &__list-nav {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            padding: 0 1.5rem;
+        }
+
+
+        .business-questions__turns-pagintation,
+        .business-questions__list-pagintation {
+            .swiper-pagination-bullet {
+                opacity: 1;
+                background-color: #282828;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: #F60;
+                }
+            }
+        }
+
+        .business-questions__turns-pagintation {
+            .swiper-pagination-bullet {
+                background-color: #fff;
+            }
+        }
+
+        .business-questions__turns-nav {
+
+            .slider-button:hover {
+                background-color: #fff;
+
+                svg {
+                    path {
+                        fill: #F60;
+                    }
+                }
+            }
+        }
+
+        &__list-item {
+            max-width: 40rem;
+
+            p {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: .8rem;
+                margin-bottom: 2rem;
+
+                li {
+                    position: relative;
+                    font-size: 1.6rem;
+                    line-height: 2.3rem;
+                    padding-left: 2.6rem;
+
+                    &::before {
+                        content: "";
+                        background: url(../images/protection-list-icon.svg) center / contain no-repeat;
+
+                        display: inline-block;
+                        width: 1.5rem;
+                        height: 1.5rem;
+
+                        position: absolute;
+                        top: .4rem;
+                        left: 0;
+                    }
+                }
+
+            }
+        }
+
+        &__item-title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        &__item-button {
+
+            flex: 1 1 auto;
+            display: flex;
+            align-items: flex-end;
+
+            a.btn {
+                font-size: 1.3rem;
+                line-height: 2.2rem;
+                padding: 1.4rem 3rem;
+            }
+        }
+
+        &__turns-wrapper {
+            padding: 0;
+        }
+
+        &__turns-title {
+            font-size: 4.6rem;
+            line-height: 6rem;
+            margin-bottom: 2.6rem;
+        }
+
+        &__turns {
+            padding: 0 1.5rem;
+
+            .swiper-wrapper {
+                display: flex;
+                gap: 0;
+            }
+        }
+
+        &__turns-item {
+            max-width: 40rem;
+            min-height: 34rem;
+
+
+            &:last-child {
+                padding-top: 3rem;
+                padding: 3rem 3.5rem 3.5rem 3.5rem;
+                background-color: #F60;
+
+                div {
+                    color: #f9f9f9;
+                    margin-bottom: 3.5rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                p {
+                    font-size: 1.5rem;
+                    line-height: 2.4rem;
+                }
+            }
+
+            &>img {
+                width: 5rem;
+                height: 5rem;
+                margin-bottom: 2rem;
+            }
+
+            span {
+
+                position: relative;
+                display: inline-block;
+                margin-bottom: 3rem;
+                padding-left: 2.4rem;
+
+                b {
+                    line-height: 3rem;
+                    color: #F60;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 5rem;
+                    height: 5rem;
+                    background-color: #f9f9f9;
+                    border-radius: 1rem;
+
+                    position: absolute;
+                    top: -1.25rem;
+                    left: 0rem;
+                    z-index: 0;
+
+                }
+            }
+
+            &>div {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 3rem;
+                margin-bottom: 1rem;
+
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+
+            a.btn {
+                margin-top: 3rem;
+                font-size: 1.2rem;
+                line-height: 2.6rem;
+                padding: 1.2rem 1.4rem;
+                max-width: 100%;
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 620px) {
+    .business-questions {
+        padding-top: 4rem;
+
+        &>img {
+            display: none;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 34px;
+            text-align: left;
+
+            margin-bottom: 1.5rem;
+
+            img {
+                width: 2.4rem;
+                position: relative;
+                top: 4px;
+            }
+        }
+
+        &__list {
+            margin-bottom: 5rem;
+        }
+
+        &__list-item {
+            max-width: 300px;
+            min-height: 37rem;
+
+            ul {
+                margin-bottom: 0;
+
+                li {
+                    position: relative;
+                    font-size: 1.6rem;
+                    line-height: 2.3rem;
+                    padding-left: 2.6rem;
+
+                    &::before {
+                        content: "";
+                        background: url(../images/protection-list-icon.svg) center / contain no-repeat;
+
+                        display: inline-block;
+                        width: 1.5rem;
+                        height: 1.5rem;
+
+                        position: absolute;
+                        top: .4rem;
+                        left: 0;
+                    }
+                }
+
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 6px;
+            height: 6px;
+        }
+
+        &__item-title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__item-button {
+
+            flex: 1 1 auto;
+            display: flex;
+            align-items: flex-end;
+
+            a.btn {
+                font-size: 1.3rem;
+                line-height: 2.2rem;
+                padding: 1.4rem 3rem;
+                margin-top: 2.7rem;
+            }
+        }
+
+        &__turns-wrapper {
+            padding: 0;
+        }
+
+        &__turns-title {
+            font-size: 24px;
+            line-height: 34px;
+            padding: 0 1.5rem;
+
+            margin-bottom: 2rem;
+        }
+
+        &__turns {
+            padding: 0 1.5rem;
+        }
+
+        &__turns-nav {
+            padding: 0 1.5rem;
+
+            .slider-button {
+                svg {
+                    width: 8px;
+                }
+            }
+        }
+
+        &__turns-item {
+            max-width: 30rem;
+
+            &>div {
+                font-size: 1.9rem;
+
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,240 @@
+.footer {
+
+    padding-top: 7rem;
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    &__row {
+        border-bottom: .1rem solid rgba(40, 40, 40, 0.10);
+    }
+
+    &__wrapper {
+        max-width: 129rem;
+        margin: 0 auto;
+        display: flex;
+        gap: 6rem;
+        justify-content: flex-start;
+        padding: 0 1.5rem 7rem;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        max-width: 38rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            li {
+                a {
+                    font-size: 1.6rem;
+                    line-height: 1.8rem;
+                    transition: 0s;
+
+                    &:hover {
+                        font-weight: 700;
+                        color: $orange;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__logo {
+        a {
+            img {
+                width: 12.8rem;
+            }
+        }
+
+        margin-bottom: 1.6rem;
+    }
+
+    &__col-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1.8rem;
+        margin-bottom: .7rem;
+    }
+
+    &__col-text {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        max-width: 22rem;
+    }
+
+    &__list-title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__phone,
+    &__address,
+    &__email {
+
+        display: flex;
+        gap: 1.4rem;
+        margin-bottom: 2rem;
+
+        img {
+            flex: 0 0 1.8rem;
+        }
+    }
+
+    &__phone {
+        p {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+
+    &__address {
+
+        align-items: flex-start;
+
+        div {
+            flex-direction: column;
+
+            p {
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+
+                &:first-child {
+                    font-weight: 700;
+                }
+            }
+
+            a {
+                color: $orange;
+                font-size: 1.3rem;
+                line-height: 20px;
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            flex: 0 0 auto;
+            width: 1.8rem;
+        }
+    }
+
+    &__email {
+        align-items: center;
+        margin-bottom: 4.8rem;
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    &__worktime {
+        p {
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            margin-bottom: .5rem;
+        }
+
+        span {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5rem;
+        }
+    }
+
+    &__policy {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 1.5rem;
+        max-width: 129rem;
+        margin: 0 auto;
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+
+        a {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+
+        padding-top: 5.5rem;
+
+        &__row {
+            border-bottom: none;
+        }
+
+        &__wrapper {
+            max-width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            padding: 0 1.5rem 0rem 1.5rem;
+        }
+
+        &__col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 38rem;
+
+            &:not(:first-child) {
+                display: none;
+            }
+        }
+
+        &__logo {
+
+            margin-bottom: .5rem;
+        }
+
+        &__col-title {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 3rem;
+        }
+
+        &__col-text {
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 22rem;
+            text-align: center;
+            margin-bottom: 0rem;
+        }
+
+        &__policy {
+            display: flex;
+            flex-direction: column;
+            justify-content: normal;
+            gap: .5rem;
+            padding: 3rem 1.5rem;
+            max-width: 100%;
+            align-items: center;
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            a {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
